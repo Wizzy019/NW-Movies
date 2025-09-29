@@ -2,6 +2,7 @@ import React from 'react'
 
 import './MovieLIst.css'
 import Fire from '../../assets/fire.jpg'
+import MovieCard from './MovieCard'
 
 const MovieList = () => {
   return (
@@ -27,6 +28,9 @@ const MovieList = () => {
                 </select>
             </div>
         </header>
+        <div className="movie-cards">
+            <MovieCard/>
+        </div>
     </section>
   )
 }

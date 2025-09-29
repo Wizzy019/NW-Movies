@@ -32,3 +32,8 @@
     margin: 0 5px;
     padding: 0 10px;
 }
+.movie-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}

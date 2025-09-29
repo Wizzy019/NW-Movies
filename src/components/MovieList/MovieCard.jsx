@@ -3,20 +3,20 @@ import React from 'react'
 import './MovieCard.css'
 import Star from '../../assets/star.jpg'
 
-const MovieCard = () => {
+const MovieCard = ({movie}) => {
   return (
-   <a href="" className='movie-card'>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3YKw6n-RDgqyFy69GSuuiue2qkkByXQLJLg&s" 
+   <a href={ `https://www.themoviedb.org/movie/${movie.id}`} target='blank'
+   className='movie-card'>
+    <img src={`https://image.tmdb.org/t/p/w500${movie.poster_path}.jpg` }
     alt="" className='movie-poster' />
     <div className="movie-details">
-      <h3 className="movie-details-heading">Movie Name</h3>
+      <h3 className="movie-details-heading">{movie.original_title}</h3>
       <div className="align-center movie-date-rate">
-        <p>10-20-2020</p>
-        <p>8.0 <img src={Star} alt="rating-icon" className='card-emoji'/></p>
+        <p>{movie.release_date}</p>
+        <p>{movie.rate_average}<img src={Star} alt="rating-icon" className='card-emoji'/></p>
       </div>
       <p className='movie-description'>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-         Officia voluptatum id iure dignissimos ipsa quaerat.
+        {movie.overview.slice(0,100) + "..."}
       </p>
     </div>
    </a>

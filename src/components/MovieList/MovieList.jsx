@@ -4,6 +4,7 @@ import './MovieLIst.css'
 import Fire from '../../assets/fire.jpg'
 import MovieCard from './MovieCard'
 import { useState } from 'react'
+import FilterGroup from './FilterGroup'
 
 const MovieList = () => {
 
@@ -38,8 +39,6 @@ const MovieList = () => {
         
     }
 
-    
-
   return (
     <section className='movie-list'>
         <header className="align-center movie-list-header">
@@ -47,14 +46,8 @@ const MovieList = () => {
             className='navbar-emoji' /></h2>
 
             <div className='align-center movie-list-fs'>
-                <ul className="align-center movie-filter">
-                    <li className={minRating === 8 ? 'movie-filter-item active' : 'movie-filter-item'} 
-                    onClick={() => handleFilter(8)}>8+ Star</li>
-                    <li className={minRating === 7 ? 'movie-filter-item active' : 'movie-filter-item'} 
-                    onClick={() => handleFilter(7)}>7+ Star</li>
-                    <li className={minRating === 6 ? 'movie-filter-item active' : 'movie-filter-item'} 
-                    onClick={() => handleFilter(6)}>6+ Star</li>
-                </ul>
+               <FilterGroup minRating={minRating} onRatingClick={handleFilter} ratings={[8,7,6]}/>
+
 
                 <select name="" id="" className="movie-sorting">
                     <option value="">SortBy</option>

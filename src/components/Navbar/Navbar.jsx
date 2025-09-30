@@ -8,7 +8,7 @@ import Party from '../../assets/party-face.jpg'
 const Navbar = () => {
   return (
     <nav className='navbar'>
-        <h1>MovieManiac</h1>
+        <h1>NW-Movies</h1>
 
         <div className="navbar-links">
             <a href="">Popular <img src={Fire} alt="fire emoji" className='navbar-emoji'/></a>

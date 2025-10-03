@@ -1,9 +1,9 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
+import _ from 'lodash'
 
-import './MovieLIst.css'
+import './MovieList.css'
 import Fire from '../../assets/fire.jpg'
 import MovieCard from './MovieCard'
-import { useState } from 'react'
 import FilterGroup from './FilterGroup'
 
 const MovieList = () => {
@@ -19,6 +19,13 @@ const MovieList = () => {
     useEffect(() =>{
       fetchMovies()
     },[])
+
+    useEffect(() => {
+        if(sort.by !== "default") {
+         const sortedMovies = _.orderBy(filterMovies, [sort.by], [sort.order])
+         setFilterMovies(sortedMovies)
+        }
+    },[sort])
 
     const fetchMovies = async () => {
         const response = await fetch(
@@ -48,8 +55,6 @@ const MovieList = () => {
     setSort(prev => ({...prev, [name]: value}))
     }
 
-    console.log(sort);
-    
 
   return (
     <section className='movie-list'>

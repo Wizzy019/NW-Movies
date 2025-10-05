@@ -41,7 +41,7 @@ const MovieList = () => {
         if(rate === minRating ) {
             setMinRating(0)
             setFilterMovies(movies)
-        } else{
+        } else {
             setMinRating(rate)
 
        const filtered = movies.filter(movie => movie.vote_average >= rate)

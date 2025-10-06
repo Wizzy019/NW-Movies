@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import _ from 'lodash'
 
-import './MovieList.css'
+import './MovieListTemp.css'
 import MovieCard from './MovieCard'
 import FilterGroup from './FilterGroup'
 

@@ -5,5 +5,5 @@ import svgr from 'vite-plugin-svgr'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), svgr()],
-  base: (typeof import.meta.env.VITE_DEPLOY_TARGET !== 'undefined' && import.meta.env.VITE_DEPLOY_TARGET === 'github') ? '/NW-Movies/' : '/'
+  base: '/.'
 })

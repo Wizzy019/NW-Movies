@@ -60,6 +60,28 @@
     fill: #7e7e7e;
     transition: 0.3s;
 }
+
+/* Responsive for dark mode toggle */
+@media (max-width: 480px){
+    .dark_mode{
+        margin-top: -10px;
+        margin-left: 5px;
+    }
+    .dark_mode_label{
+        width: 56px;
+        height: 26px;
+    }
+    .dark_mode_label:after{
+        width: 22px;
+        height: 22px;
+        top: 2px;
+        left: 2px;
+    }
+    .dark_mode_label img{
+        width: 16px;
+        top: 4px;
+    }
+}
 .dark_mode_input:checked + .dark_mode_label img.sun {
     fill: #7e7e7e;
 }

@@ -37,7 +37,7 @@ const DarkMode = () => {
                 type='checkbox'
                 id='darkmode-toggle'
                 onChange={toggleTheme}
-                defaultChecked = {selectedTheme !== "light"}
+                defaultChecked = {selectedTheme !== "dark"}
             />
             <label className='dark_mode_label' htmlFor='darkmode-toggle'>
                 <img src={Sun} alt="Sun icon" className="sun"/>

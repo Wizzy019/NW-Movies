@@ -37,3 +37,22 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+
+/* Responsive movie list adjustments */
+@media (max-width: 1024px){
+    .movie-list-header{ padding: 10px 20px; }
+    .movie-list-heading{ font-size: 24px; }
+}
+
+@media (max-width: 768px){
+    .movie-list-header{ padding: 8px 16px; }
+    .movie-list-heading{ font-size: 22px; }
+    .movie-filter{ font-size: 14px; }
+    .movie-cards{ gap: 6px; }
+}
+
+@media (max-width: 480px){
+    .movie-list-header{ padding: 6px 12px; display: flex; flex-direction: column; gap: 8px; align-items: flex-start; }
+    .movie-list-heading{ font-size: 20px; }
+    .movie-filter{ font-size: 13px; display: flex; gap: 6px; overflow-x: auto; }
+}

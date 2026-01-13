@@ -1,16 +1,17 @@
-# React + Vite
+# NW-Movies
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**NW-Movies** is a web application that displays a list of movies. Users can click on a movie to view details on the original source website via the integrated API.
 
-Currently, two official plugins are available:
+## Key Features
+- Fetches and displays movies from a public API
+- Clickable movie items redirect to the movie’s original webpage
+- Simple, responsive interface for easy browsing
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tech Stack
+React.js | API Integration | Git/GitHub
 
-## React Compiler
+## Project Status
+Completed — fully functional and tested.
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Skills Demonstrated
+Frontend development, React component structure, API fetching and integration, dynamic rendering, responsive UI
